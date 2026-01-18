@@ -1,0 +1,309 @@
+
+        /* MOBILE-FIRST BASE STYLES - MAX 700px */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        html, body {
+            max-width: 700px;
+            margin: 0 auto;
+            overflow-x: hidden;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1590080667306-eb444a5c5c8a?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        
+        /* CONTAINER */
+        .container {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        /* HEADER */
+        .header {
+            background-color: white;
+            color: rgb(7, 5, 5);
+            padding: 25px 15px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .header-subtitle {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        /* MAIN CONTENT */
+        .content {
+            padding: 20px 15px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section-title {
+            font-size: 1.4rem;
+            color: #060707;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 4px solid #040504;
+            font-weight: 600;
+        }
+        
+        /* PARAGRAPHS */
+        .text-content {
+            margin-bottom: 20px;
+            text-align: left;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #444;
+        }
+        
+        /* APPLICANT ITEMS WITH IMAGES */
+        .applicant-container {
+            margin: 25px 0;
+        }
+        
+        .applicant-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            background: #f8fdfa;
+            border: 1px solid #d4edda;
+            gap: 15px;
+        }
+        
+        .rejected-item {
+            background: #efeeee;
+            border: 1px solid #e6e0e0;
+        }
+        
+        .applicant-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 2px solid #e7efec;
+        }
+        
+        .rejected-item .applicant-image {
+            border-color: #fff4f5;
+        }
+        
+        .applicant-info {
+            flex: 1;
+        }
+        
+        .applicant-name {
+            font-size: 1.1rem;
+            color: #030403;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .rejected-item .applicant-name {
+            color: #721c24;
+        }
+        
+        .applicant-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .status {
+            display: inline-block;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+        
+        .accepted {
+            background: #d4edda;
+            color: #060807;
+        }
+        
+        .rejected {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        /* CONTENT IMAGES - RECTANGULAR */
+        .content-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 2px solid #ddd;
+        }
+        
+        /* VIDEO SECTION */
+        .video-section {
+            margin: 25px 0;
+        }
+        
+        .video-title {
+            font-size: 1.2rem;
+            color: #111312;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .video-container {
+            margin-bottom: 25px;
+        }
+        
+        video {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            background: #000;
+            display: block;
+        }
+        
+        .video-caption {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 8px;
+            text-align: center;
+            font-style: italic;
+        }
+        
+        /* FOOTER WITH SOCIAL MEDIA */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 25px 15px;
+            text-align: center;
+            margin-top: 30px;
+            border-top: 3px solid #040404;
+        }
+        
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+        
+        .social-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.3s;
+            min-width: 70px;
+        }
+        
+        .social-link:hover {
+            transform: translateY(-5px);
+        }
+        
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+            font-size: 1.3rem;
+        }
+        
+        .facebook {
+            background: #1877f2;
+        }
+        
+        .telegram {
+            background: #0088cc;
+        }
+        
+        .whatsapp {
+            background: #25d366;
+        }
+        
+        .tiktok {
+            background: #000000;
+        }
+        
+        .social-name {
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .copyright {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+        
+        /* RESPONSIVE - MAX 700px */
+        @media (min-width: 480px) {
+            .applicant-image {
+                width: 90px;
+                height: 90px;
+            }
+            
+            video {
+                height: 220px;
+            }
+        }
+        
+        @media (min-width: 600px) {
+            .container {
+                margin: 20px auto;
+                border-radius: 15px;
+                overflow: hidden;
+            }
+            
+            .content-image {
+                height: 220px;
+            }
+            
+            video {
+                height: 250px;
+            }
+        }
+        
+        /* Ensure never exceeds 700px */
+        @media (min-width: 701px) {
+            html, body, .container {
+                max-width: 700px;
+            }
+        }
+  
